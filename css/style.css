@@ -408,6 +408,7 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -548,6 +549,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .navbar-top {
+    padding: 28px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
