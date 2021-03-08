@@ -7,4 +7,12 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
+  effect: 'coverflow',
+  speed: 600,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  }
 });
