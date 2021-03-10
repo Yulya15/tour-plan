@@ -798,9 +798,15 @@ template {
 }
 
 .map {
+  background-image: url(../img/cards.png);
+  background-position: center center;
+  background-size: 65%;
+  background-repeat: no-repeat;
   width: 347px;
+  height: 213px;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
