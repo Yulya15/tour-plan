@@ -28,7 +28,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 let map_container = document.getElementById('map');
 let options_map = {
-  once: true,//запуск один раз, и удаление наблюдателя сразу
+  once: true,
   passive: true,
   capture: true
 };
