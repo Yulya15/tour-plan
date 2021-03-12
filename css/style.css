@@ -856,7 +856,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
   line-height: 30px;
 }
@@ -898,7 +898,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
@@ -1055,6 +1055,101 @@ template {
   z-index: 10;
 }
 
+.activities {
+  padding-top: 60px;
+  padding-bottom: 98px;
+}
+
+.activities__title {
+  margin-top: 0;
+  margin-bottom: 57px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-bottom: 24px;
+  padding-left: 26px;
+  height: 255px;
+  width: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20,08px;
+}
+
+.card__button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1067,6 +1162,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1163,6 +1262,21 @@ template {
   }
   .reviews-slider__button--next {
     right: 0;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+    padding-right: 16%;
   }
 }
 
@@ -1294,6 +1408,13 @@ template {
             transform: translate(50%, 0);
     margin-right: -90px;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .card {
+    width: 48%;
+    height: 250px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1312,6 +1433,7 @@ template {
   }
   .hotel {
     padding-top: 0;
+    padding-bottom: 39px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1341,14 +1463,43 @@ template {
     line-height: 25px;
   }
   .newsletter-title__strong {
+    margin-top: 5px;
     font-size: 30px;
     line-height: 38px;
+    margin-bottom: -5px;
   }
   .subscribe {
     width: 280px;
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .activities {
+    padding-top: 37px;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+  .card {
+    padding-right: 30%;
+  }
+  .card:nth-child(even) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  .card:not(:first-child):nth-child(odd) {
+    margin-bottom: 28px;
+  }
+  .card:last-child {
+    padding-right: 15%;
+    margin-bottom: 0;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
   }
 }
 
@@ -1389,7 +1540,7 @@ template {
     max-height: 173px;
   }
   .newsletter {
-    padding-left: 6px;
+    padding-left: 7px;
   }
   .reviews__title {
     margin: auto;
