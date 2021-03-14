@@ -35,6 +35,9 @@
       width: 340px     
   .hotel
     padding-bottom: 60px
+    &-info
+      &__name
+        margin-top: 2px
     &-grid
       height: 100%
       flex-direction: column
@@ -53,6 +56,16 @@
   .map
     width: 340px
     max-height: 210px
+
+  .packages
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 55px
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 500px)
+      gap: 15px
+  
   .newsletter
     padding-top: 92px
     padding-bottom: 93px
@@ -86,6 +99,7 @@
     width: 339px
     height: 255px
     padding-right: 16%
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -143,6 +157,39 @@
     width: 100%
   .map
     width: 100%
+
+  .packages
+    &__title
+      font-size: 30px
+      margin-bottom: 45px
+    &-wrapper  
+      grid-template-columns: 100%
+      grid-template-rows: 1fr repeat(4, 480px)
+  .package
+    display: grid
+    grid-column: 1 / 2
+    grid-template-columns: 100%
+    &:first-child
+      grid-column: 1 
+      grid-template-columns: 100%
+    &__images
+      height: 240px
+    &-first
+      &__images
+        height: 300px
+        width: 100%
+      &__image
+        object-fit: cover
+      &__info
+        padding-top: 22px
+        padding-right: 21px
+        padding-bottom: 25px
+        padding-left: 21px
+    &__info
+      padding-top: 22px
+      padding-right: 21px
+      padding-bottom: 25px
+      padding-left: 21px
   .newsletter
     &-wrapper
       max-width: 576px
