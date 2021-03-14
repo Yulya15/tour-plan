@@ -830,8 +830,8 @@ template {
 .packages-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 500px 500px;
       grid-template-rows: 500px 500px;
   gap: 30px;
@@ -1471,10 +1471,10 @@ template {
     margin-bottom: 55px;
   }
   .packages-wrapper {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (500px)[3];
-        grid-template-rows: repeat(3, 500px);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
     gap: 15px;
   }
   .newsletter {
@@ -1618,8 +1618,8 @@ template {
   .packages-wrapper {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 1fr (480px)[4];
-        grid-template-rows: 1fr repeat(4, 480px);
+    -ms-grid-rows: 1fr 480px 480px 480px 480px;
+        grid-template-rows: 1fr 480px 480px 480px 480px;
   }
   .package {
     display: -ms-grid;
