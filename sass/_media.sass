@@ -158,14 +158,13 @@
   body
     padding-top: 78px
   .navbar
-    &__mobile
+    &_mobile
       &_fixed
         position: fixed
         left: 0
         top: 0
         right: 0
         z-index: 99
-        overflow: scroll
     &__user
       &_mobile
         &_hidden
@@ -189,9 +188,12 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 74px
       padding-top: 31px
+      overflow-y: scroll
+      scroll-snap-type: y
       &--visible
+        scroll-snap-align: start
         display: block
     &-menu
       padding-top: 0
@@ -275,18 +277,13 @@
       grid-template-columns: 100%
     &__images
       height: 240px
-    &-first
-      &__images
+      &-first
         height: 300px
         width: 100%
-      &__image
+    &__image
+      &-first
         object-fit: cover
-      &__info
-        padding-top: 22px
-        padding-right: 21px
-        padding-bottom: 25px
-        padding-left: 21px
-    &__info
+    &__info, &__info-first
       padding-top: 22px
       padding-right: 21px
       padding-bottom: 25px
@@ -447,6 +444,7 @@
         min-width: 30px
     &__btr-info
       display: flex
+      align-items: start
       flex-direction: column-reverse
     &__message
       margin-bottom: 0
