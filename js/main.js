@@ -66,17 +66,3 @@ var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function() {
   document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
 });
-
-// let options_vis = {
-//   once: true,
-//   passive: true,
-//   capture: true
-// };
-
-// menuButton.addEventListener('mouseover', addVisible(), options_vis);
-// menuButton.addEventListener('touchstart', addVisible(), options_vis);
-// menuButton.addEventListener('touchmove', addVisible(), options_vis);
-
-// function addVisible() {
-//   document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
-// }

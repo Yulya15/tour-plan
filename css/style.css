@@ -1577,7 +1577,7 @@ template {
   margin-bottom: 23px;
 }
 
-.footer__btr-info {
+.footer__btn-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2313,7 +2313,7 @@ template {
     max-width: 30px;
     min-width: 30px;
   }
-  .footer__btr-info {
+  .footer__btn-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
