@@ -82,7 +82,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="booking__button">View Other Options</button>
+              <button data-toggle="modal" class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div id="map" class="map"></div>
@@ -147,7 +147,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -189,7 +189,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -231,7 +231,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -274,7 +274,7 @@
               </div>
               <!-- /.package__price -->
               <div class="package__buttons">
-                <button class="package__button">Book Now</button>
+                <button data-toggle="modal" class="package__button">Book Now</button>
               </div>
             </div>
             <!-- /.package-prices -->
@@ -318,7 +318,7 @@
               </div>
               <!-- /.package__price -->
               <div class="package__buttons">
-                <button class="package__button">Book Now</button>
+                <button data-toggle="modal" class="package__button">Book Now</button>
               </div>
             </div>
             <!-- /.package-prices -->
@@ -432,25 +432,25 @@
           <div class="card activities__card">
             <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
             <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -461,3 +461,26 @@
     <!-- /.activities -->
 
 <?php include('footer.php')?>
+
+<div id="modal" class="modal">
+  <div class="modal__overlay"></div>
+  <!-- /.modal__overlay -->
+  <div class="modal__dialog">
+    <a href="#" class="modal__close">
+      <img src="img/close.svg" alt="Icon: close">
+    </a>
+    <h3 class="modal__title modal__title-message">Booking</h3>
+    <form action="send.php" method="POST" class="modal__form">
+      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+      <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+      <input type="text" class="input modal__input" placeholder="Email*" name="email">
+      <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+      <div class="modal__btn-info">
+        <button class="button modal__button" name="modal-btn">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </div>
+      <!-- /.modal__btn-info -->
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->

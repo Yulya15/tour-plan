@@ -129,9 +129,9 @@
             <form action="send.php" method="POST" class="footer__form">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
               <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-              <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__btn-info">
-                <button class="footer__button" name="footer-btn">Send</button>
+                <button class="button footer__button" name="footer-btn">Send</button>
                 <span class="footer__info">* Required Fields</span>
               </div>
               <!-- /.footer__btn-info -->
@@ -163,6 +163,7 @@
     <script src="js/parallax.js"></script>
 
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

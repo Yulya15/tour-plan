@@ -151,6 +151,15 @@
       max-height: 22px
     &__rules
       margin-left: 0
+  .modal
+    &__dialog
+      height: 100%
+      overflow-y: scroll
+      max-width: 400px
+      padding-top: 15px
+      padding-bottom: 15px
+      padding-right: 40px
+      padding-left: 40px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -331,6 +340,22 @@
     &__social
       &-network
         margin-left: 10px
+  .modal
+    &__dialog
+      max-width: 400px
+      min-width: 400px
+      padding-right: 15px
+      padding-left: 15px
+    &__message
+      margin-bottom: 0
+    &__btn-info
+      display: flex
+      align-items: start
+      flex-direction: column-reverse
+      padding-bottom: 15px
+    &__info
+      padding-top: 15px
+      padding-bottom: 15px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -456,8 +481,10 @@
       align-items: start
     &__rules
       margin-bottom: 10px
-    
-      
+  .modal
+    &__dialog
+      max-width: 390px
+      min-width: 300px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -487,8 +514,7 @@
     min-height: 173px
     max-height: 173px
   .newsletter
-    padding-left: 7px
-    
+    padding-left: 7px   
   .reviews
     &__title
       margin: auto
