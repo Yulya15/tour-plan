@@ -1999,8 +1999,6 @@ template {
     margin-left: 0;
   }
   .modal__dialog {
-    height: 100%;
-    overflow-y: scroll;
     max-width: 400px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -2498,7 +2496,7 @@ template {
   }
   .modal__dialog {
     max-width: 390px;
-    min-width: 300px;
+    min-width: 280px;
   }
 }
 

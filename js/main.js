@@ -73,20 +73,22 @@ $(document).ready(function () {
   var closeModalButton =$(".modal__close");
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
-  var scrollTop = window.pageYOffset;
+  // var scrollTop = window.pageYOffset;
+
     function openModal() {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
       modalOverlay.addClass('modal__overlay--visible');
       modalDialog.addClass('modal__dialog--visible');
      
-      scrollTop = window.pageYOffset; // запоминаем текущую прокрутку сверху
-      $('body').css({
-        position: 'fixed',
-        width: '100%',
-        top: -scrollTop+'px',
-        overflow: 'hidden'
-      });
+      // scrollTop = window.pageYOffset; // запоминаем текущую прокрутку сверху
+      // $('body').css({
+      //   position: 'fixed',
+      //   width: '100%',
+      //   top: -scrollTop+'px',
+      //   overflow: 'hidden'
+      // });
+      // modalDialog.css('top', scrollTop);
     }
 
     function closeModal(event) {
@@ -95,14 +97,13 @@ $(document).ready(function () {
       var modalDialog = $(".modal__dialog");
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
-      $('body').css({
-        position: '',
-        width: '',
-        top: '',
-        overflow: ''
-      });
-      window.scroll(0, scrollTop);
-      
+      // $('body').css({
+      //   position: '',
+      //   width: '',
+      //   top: '',
+      //   overflow: ''
+      // });
+      // window.scroll(0, scrollTop);
     }
 
     $("#modal").click(function() {
