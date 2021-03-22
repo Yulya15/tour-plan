@@ -339,12 +339,13 @@
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">subscribe to our 
         <span class="newsletter-title__strong">Newsletter</span></h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button" name="newsletter-btn">Send</button>
         </form>
@@ -470,10 +471,10 @@
       <img src="img/close.svg" alt="Icon: close">
     </a>
     <h3 class="modal__title modal__title-message">Booking</h3>
-    <form action="send.php" method="POST" class="modal__form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-      <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-      <input type="text" class="input modal__input" placeholder="Email*" name="email">
+    <form action="send.php" method="POST" class="modal__form form">
+      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+      <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+      <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <div class="modal__btn-info">
         <button class="button modal__button" name="modal-btn">Send</button>

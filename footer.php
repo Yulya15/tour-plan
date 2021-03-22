@@ -126,9 +126,13 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title-message">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+              </div>
+              <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__btn-info">
                 <button class="button footer__button" name="footer-btn">Send</button>
@@ -166,6 +170,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

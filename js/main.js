@@ -122,4 +122,26 @@ $(document).ready(function () {
         closeModal(event);
     });
 
+    $("input[name='phone']").mask("+7(999) 999-9999");
+
+    $(".form").each(function(){
+      // Обработка форм
+      $(this).validate({
+        errorClass: "invalid",
+        messages: {
+          name: {
+            required: "Please specify your name",
+            minlenght: "Username must be longer than or equal to 2 characters"
+          },
+          email: {
+            required: "We need your email address to contact you",
+            email: "Your email address must be in the format of name@domain.com"
+          },
+            phone: {
+              required: "A phone number is required",
+            }
+        },    
+      });
+    });
+
 });
