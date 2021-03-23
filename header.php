@@ -19,14 +19,14 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.php" class="logo" data-aos="fade-right" data-aos-delay="100">
+          <a href="index.php" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-right" data-aos-delay="200">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
             <input
               type="text"
               class="search__input"
@@ -36,7 +36,7 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -81,25 +81,25 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="100">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="200">
               <a href="#" class="navbar-menu__link">Hotels</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="300">
               <a href="#" class="navbar-menu__link">Activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
               <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
               <a href="#" class="navbar-menu__link">Restaurants</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>

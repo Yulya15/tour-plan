@@ -82,7 +82,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="booking__button">View Other Options</button>
+              <button data-toggle="modal" class="booking__button" data-aos="zoom-in" data-aos-delay="200">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div id="map" class="map"></div>
@@ -99,10 +99,9 @@
 
     <section class="packages">
       <div class="container">
-        <h2 class="packages__title">Other packages</h2>
+        <h2 class="packages__title" data-aos="fade-up" data-aos-delay="100">Other packages</h2>
         <div class="packages-wrapper">
-          <div class="package packages__package">
-            
+          <div class="package packages__package" data-aos="fade-up" data-aos-delay="200">
             <div class="package__images-first">
               <img src="img/hotel-1.jpg" alt="Hotel Blue Haven" class="package__image-first">
               <span class="package__offer-first">Flash Offer</span>
@@ -147,7 +146,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button data-toggle="modal" class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button" data-aos="zoom-in" data-aos-delay="100">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -156,7 +155,7 @@
           </div>
           <!-- /.package -->
 
-          <div class="package packages__package">
+          <div class="package packages__package" data-aos="fade-up" data-aos-delay="200">
             <div class="package__images">
               <img src="img/hotel-2.jpg" alt="LUX* Belle Mare" class="package__image">
               <span class="package__offer">Flash Offer</span>
@@ -189,7 +188,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button data-toggle="modal" class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button" data-aos="zoom-in" data-aos-delay="100">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -198,7 +197,7 @@
           </div>
           <!-- /.package -->
 
-          <div class="package packages__package">
+          <div class="package packages__package" data-aos="fade-up" data-aos-delay="300">
             <div class="package__images">
               <img src="img/hotel-3.jpg" alt="White Palace" class="package__image">
               <span class="package__offer">Flash Offer</span>
@@ -231,7 +230,7 @@
                 </div>
                 <!-- /.package__price -->
                 <div class="package__buttons">
-                  <button data-toggle="modal" class="package__button">Book Now</button>
+                  <button data-toggle="modal" class="package__button" data-aos="zoom-in" data-aos-delay="100">Book Now</button>
                 </div>
               </div>
               <!-- /.package-prices -->
@@ -240,7 +239,7 @@
           </div>
           <!-- /.package -->
 
-        <div class="package packages__package">
+        <div class="package packages__package" data-aos="fade-up" data-aos-delay="300">
           <div class="package__images">
             <img src="img/hotel-4.jpg" alt="Luxury Place" class="package__image">
             <span class="package__offer">Flash Offer</span>
@@ -274,7 +273,7 @@
               </div>
               <!-- /.package__price -->
               <div class="package__buttons">
-                <button data-toggle="modal" class="package__button">Book Now</button>
+                <button data-toggle="modal" class="package__button" data-aos="zoom-in" data-aos-delay="100">Book Now</button>
               </div>
             </div>
             <!-- /.package-prices -->
@@ -283,7 +282,7 @@
         </div>
         <!-- /.package -->
 
-        <div class="package packages__package">
+        <div class="package packages__package" data-aos="fade-up" data-aos-delay="300">
           <div class="package__images">
             <img src="img/hotel-5.jpg" alt="Hotel Five Star" class="package__image">
             <span class="package__offer">Flash Offer</span>
@@ -318,7 +317,7 @@
               </div>
               <!-- /.package__price -->
               <div class="package__buttons">
-                <button data-toggle="modal" class="package__button">Book Now</button>
+                <button data-toggle="modal" class="package__button" data-aos="zoom-in" data-aos-delay="100">Book Now</button>
               </div>
             </div>
             <!-- /.package-prices -->
@@ -375,7 +374,7 @@
                   <!-- /.reviews-slider__raiting -->
                 </div>
                 <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">It was very nice hotel with cleanliness. 
+                <p class="reviews-slider__text" data-aos="zoom-in">It was very nice hotel with cleanliness. 
                   Staff behavior was good and polite. They welcome us very well. Issue was 
                   only that Lift was not in working and we were allotted to 3rd floor and 
                   amenities articles were in corner of gallery which were giving bad feeling. 
@@ -404,7 +403,7 @@
                   <!-- /.reviews-slider__raiting -->
                 </div>
                 <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="reviews-slider__text" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                   Enim, debitis. Quo asperiores quam magni ab reprehenderit sapiente eum omnis nostrum 
                   blanditiis fuga? Ad alias distinctio mollitia quam assumenda nemo dignissimos. Lorem 
                   ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolor nam perspiciatis 
@@ -466,24 +465,25 @@
 <div id="myModal" class="modal">
   <div class="modal__overlay"></div>
   <!-- /.modal__overlay -->
-  <div class="modal__dialog"> 
-    <a href="#" class="modal__close">
-      <img src="img/close.svg" alt="Icon: close">
-    </a>
-    <h3 class="modal__title modal__title-message">Booking</h3>
-    <form action="send.php" method="POST" class="modal__form form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-      <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="16">
-      <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-      <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-      <div class="modal__btn-info">
-        <button class="button modal__button" name="modal-btn">Send</button>
-        <span class="modal__info">* Required Fields</span>
-      </div>
-      <!-- /.modal__btn-info -->
-  </div>
+    <div class="modal__dialog"> 
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title-message">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="16">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <div class="modal__btn-info">
+          <button class="button modal__button" name="modal-btn">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+        <!-- /.modal__btn-info -->
+        </form>
+    </div>
   <!-- /.modal__dialog -->
 </div>
-<!-- /.modal -->
+
 
 <?php include('footer.php')?>

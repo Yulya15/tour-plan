@@ -169,5 +169,7 @@ $(document).ready(function () {
       });
     });
 
+    $('body').bind('touchstart', function () {});
+
     AOS.init();
 });

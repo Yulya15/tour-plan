@@ -135,7 +135,7 @@
               </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__btn-info">
-                <button class="button footer__button" name="footer-btn">Send</button>
+                <button class="button footer__button" name="footer-btn" data-aos="zoom-in" data-aos-delay="300">Send</button>
                 <span class="footer__info">* Required Fields</span>
               </div>
               <!-- /.footer__btn-info -->
