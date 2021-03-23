@@ -73,7 +73,7 @@ $(document).ready(function () {
   var closeModalButton =$(".modal__close");
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
-  // var scrollTop = window.pageYOffset;
+  var scrollTop = window.pageYOffset;
 
     function openModal() {
       var modalOverlay = $(".modal__overlay");
@@ -81,15 +81,36 @@ $(document).ready(function () {
       modalOverlay.addClass('modal__overlay--visible');
       modalDialog.addClass('modal__dialog--visible');
      
-      // scrollTop = window.pageYOffset; // запоминаем текущую прокрутку сверху
-      // $('body').css({
-      //   position: 'fixed',
-      //   width: '100%',
-      //   top: -scrollTop+'px',
-      //   overflow: 'hidden'
-      // });
-      // modalDialog.css('top', scrollTop);
+      scrollTop = window.pageYOffset; // запоминаем текущую прокрутку сверху
+      $('body').css({
+        position: 'fixed',
+        width: '100%',
+        top: -scrollTop+'px',
+        overflow: 'hidden'
+      });
     }
+
+    if ($( window ).height() < $(".modal__dialog").height()) {
+      console.log("Меньше");
+      $(".modal__dialog").css({
+        height: '100%'
+      });
+    }
+    
+    $( window ).resize(function() {
+      if ($( window ).height() < $(".modal__dialog").height()) {
+        console.log("Меньше");
+        $(".modal__dialog").css({
+          height: '100%'
+        });
+      }
+      else if ($( window ).height() > $(".modal__dialog").height()) {
+        console.log("Больше");
+        $(".modal__dialog").css({
+          height: ''
+        });
+      }
+    });
 
     function closeModal(event) {
       event.preventDefault();
@@ -97,16 +118,16 @@ $(document).ready(function () {
       var modalDialog = $(".modal__dialog");
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
-      // $('body').css({
-      //   position: '',
-      //   width: '',
-      //   top: '',
-      //   overflow: ''
-      // });
-      // window.scroll(0, scrollTop);
+      $('body').css({
+        position: '',
+        width: '',
+        top: '',
+        overflow: ''
+      });
+      window.scroll(0, scrollTop);
     }
 
-    $("#modal").click(function() {
+    $("#myModal").click(function() {
       $(document).on('click', function(event) {
         var select = $(".modal__dialog");
         if ($(event.target).closest(select).length)
@@ -122,7 +143,10 @@ $(document).ready(function () {
         closeModal(event);
     });
 
-    $("input[name='phone']").mask("+7(999) 999-9999");
+    $("input[name='phone']").click(function(){
+      $(this).attr("placeholder", "+7(___) ___-____)");
+      $(this).mask("+7(999) 999-9999");
+    });
 
     $(".form").each(function(){
       // Обработка форм
@@ -131,17 +155,19 @@ $(document).ready(function () {
         messages: {
           name: {
             required: "Please specify your name",
-            minlenght: "Username must be longer than or equal to 2 characters"
+            minlenght: "Username must be longer than or equal to 2 characters",
           },
           email: {
             required: "We need your email address to contact you",
-            email: "Your email address must be in the format of name@domain.com"
+            email: "Your email address must be in the format of name@domain.com",
           },
             phone: {
               required: "A phone number is required",
+              minlenght: "Please enter at least 10 characters.",
             }
         },    
       });
     });
 
+    AOS.init();
 });

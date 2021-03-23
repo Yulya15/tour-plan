@@ -430,25 +430,25 @@
       <div class="container">
         <h2 class="activities__title">Other activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
@@ -461,19 +461,19 @@
     </section>
     <!-- /.activities -->
 
-<?php include('footer.php')?>
 
-<div id="modal" class="modal">
+
+<div id="myModal" class="modal">
   <div class="modal__overlay"></div>
   <!-- /.modal__overlay -->
-  <div class="modal__dialog">
+  <div class="modal__dialog"> 
     <a href="#" class="modal__close">
       <img src="img/close.svg" alt="Icon: close">
     </a>
     <h3 class="modal__title modal__title-message">Booking</h3>
     <form action="send.php" method="POST" class="modal__form form">
       <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-      <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+      <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="16">
       <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <div class="modal__btn-info">
@@ -485,3 +485,5 @@
   <!-- /.modal__dialog -->
 </div>
 <!-- /.modal -->
+
+<?php include('footer.php')?>

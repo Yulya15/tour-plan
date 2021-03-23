@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,14 +19,14 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.php" class="logo">
+          <a href="index.php" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-right" data-aos-delay="200">
             <input
               type="text"
               class="search__input"
@@ -35,7 +36,7 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
