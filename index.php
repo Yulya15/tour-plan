@@ -32,19 +32,19 @@
             <div class="swiper-container hotel-slider hotel__slider">  
               <div class="swiper-wrapper">    
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="hotel-slider__image" src="img/slide-1.jpg" alt="Slide">
+                  <img class="hotel-slider__image" alt="Slide" src="img/slide-1.webp" >
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="hotel-slider__image" src="img/slide-2.jpg" alt="Slide">
+                  <img class="hotel-slider__image" alt="Slide" src="img/slide-2.webp">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="hotel-slider__image" src="img/slide-3.jpg" alt="Slide">
+                  <img class="hotel-slider__image" alt="Slide" src="img/slide-3.webp">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="hotel-slider__image" src="img/slide-4.jpg" alt="Slide">
+                  <img class="hotel-slider__image" alt="Slide" src="img/slide-4.webp">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="hotel-slider__image" src="img/slide-5.jpg" alt="Slide">
+                  <img class="hotel-slider__image" alt="Slide" src="img/slide-5.webp">
                 </div>
               </div>         
               <button class="hotel-slider__button hotel-slider__button--prev"></button>

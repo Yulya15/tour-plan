@@ -163,16 +163,13 @@
       <!-- /.container -->
     </footer>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script>
-
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script> -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
+    <script src="js/parallax.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
   </body>
 </html>

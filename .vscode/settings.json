@@ -1,5 +1,15 @@
 {
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+      
+
+      {
+        "format": "compressed",
+        "extensionName": ".css",
+        "savePath": null
+      }
+    ]
 }

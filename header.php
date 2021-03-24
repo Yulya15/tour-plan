@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="https://yasnikowa.ru/tour-plan/favicon.ico" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="preload"> 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">

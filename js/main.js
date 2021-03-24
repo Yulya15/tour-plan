@@ -169,7 +169,12 @@ $(document).ready(function () {
       });
     });
 
-    $('body').bind('touchstart', function () {});
+  $('.hover').on('touchstart touchend', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('hover_effect');
+  });
+
+    // $('body').bind('touchstart', function () {});
 
     AOS.init();
 });
